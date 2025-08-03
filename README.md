@@ -4,13 +4,13 @@ A collection of additional applications, security enhancements, and customizatio
 
 ## Overview
 
-This project provides a curated set of enhancements that build on top of the standard Omakub installation, including:
+Omakub is awesome, and very opinionated... I love it and use it as a starting point, but I am also opinionated, so this is my curated set of enhancements that build on top standard Omakub, including:
 
 - **Additional Applications**: LastPass, pCloud, Discord, Mailspring, PIA VPN
 - **Security Hardening**: SSH daemon and UFW firewall configuration
 - **Chrome Theme Integration**: Enhanced theme support for all Omakub themes
-- **Desktop Enhancements**: Improved terminal and GNOME configurations
-- **Cleanup Tools**: Remove unwanted default applications
+- **Desktop Enhancements**: Default terminal set to GNOME, with configurations and UI
+- **Cleanup Tools**: Remove some default applications (Basecamp, Hey, etc.)
 
 ## Prerequisites
 
@@ -56,9 +56,9 @@ Extends Omakub's theme system to include Chrome browser theming:
 
 ### 🖥️ Desktop Enhancements
 
-- **Default Terminal Configuration**: Enhanced terminal setup
-- **GNOME Terminal Profiles**: Improved terminal profiles
-- **Better Integration**: Seamless desktop experience
+- **Default Terminal Configuration**: I am not a Alacritty or Zellij guy and enjoy GNOME terminal. Don't hate.
+- **GNOME Terminal Profiles**: Improved terminal colors (with default)
+- **Ubuntu Dock**: I like the dock so it's back (with smaller icons)
 
 ### 🗑️ Application Cleanup
 
@@ -124,6 +124,7 @@ post-omakub/
 │   └── desktop/
 │       ├── setup-enhancements.sh       # Desktop enhancement setup
 │       ├── set-default-terminal.sh     # Terminal configuration
+│       ├── set-gnome-extensions.sh     # Ubuntu Dock configuration
 │       └── set-gnome-terminal-profile.sh
 └── uninstall/                          # Application removal scripts
     ├── app-basecamp.sh
