@@ -17,4 +17,11 @@ if gum confirm "Setup GNOME terminal profile enhancements?"; then
     echo "✓ GNOME terminal profile configured"
 fi
 
+# Setup Ubuntu Dock
+if gum confirm "Setup Ubuntu Dock?"; then
+    bash "$SCRIPT_DIR/set-gnome-extensions.sh"
+    echo "✓ Ubuntu Dock configured"
+fi
+
+
 echo "Desktop enhancements setup completed!"
