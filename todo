@@ -1,0 +1,25 @@
+1. Add permanent alias back for ll='ls -lah'
+2. Change the terminal back to show directory
+3. Change terminal line display and character back to normal <user@hostname:folder$ from the weird empty line and circle right arrow
+4. Remove alacritty, whatsapp, and signal from dock
+5. Add yes to all options for install everything
+6. Add terminal to second spot in dock. add discord to fifth spot.
+7. Reset tactile gnome extension layout 1 to the default. set advance gap to 0.
+8. Do not include unmounted volumes in dock config. also set panel mode.
+9. Rename theme section to browser config
+10. Enable developer mode in chrome. add
+11. Add firefox extensions - lastpass and ublock origins. turn off firefox telemetry. 
+12. Add snap install remmina
+13. Add apt install tmux
+14. 
+
+# Simple prompt with path in the window/pane title and caret for typing line
+#PS1=$'\uf0a9 '
+#PS1="\[\e]0;\w\a\]$PS1"
+if [ "$color_prompt" = yes ]; then
+    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+else
+    PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
+fi
+
+
