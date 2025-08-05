@@ -56,13 +56,12 @@ EOF
     echo
     echo "1) Install additional applications"
     echo "2) Setup security hardening (SSH + UFW)"
-    echo "3) Enhance Chrome theme integration"
-    echo "4) Setup terminal/GNOME enhancements"
-    echo "5) Remove unwanted default apps"
-    echo "6) Install everything"
-    echo "7) Exit"
+    echo "3) Setup terminal/GNOME enhancements"
+    echo "4) Remove unwanted default apps"
+    echo "5) Install everything"
+    echo "6) Exit"
     echo
-    read -p "Choose an option (1-7): " choice
+    read -p "Choose an option (1-6): " choice
     
     case $choice in
         1) install_applications ;;

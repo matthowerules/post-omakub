@@ -6,9 +6,8 @@ A collection of additional applications, security enhancements, and customizatio
 
 Omakub is awesome, and very opinionated... I love it and use it as a starting point, but I am also opinionated, so this is my curated set of enhancements that build on top standard Omakub, including:
 
-- **Additional Applications**: LastPass, pCloud, Discord, Mailspring, PIA VPN
-- **Security Hardening**: SSH daemon and UFW firewall configuration
-- **Chrome Theme Integration**: Enhanced theme support for all Omakub themes
+- **Additional Applications**: Apple Music, Discord, Firefox, Chromium, Konversation IRC, LastPass, Mailspring, pCloud, PIA VPN, Remmina, tmux, uBlock Origin Lite
+- **Security Hardening**: SSH daemon and UFW firewall configuration  
 - **Desktop Enhancements**: Default terminal set to GNOME, with configurations and UI
 - **Cleanup Tools**: Remove some default applications (Basecamp, Hey, etc.)
 
@@ -35,11 +34,18 @@ cd post-omakub
 
 | Application | Description | Installation Script |
 |-------------|-------------|-------------------|
-| **LastPass** | Password manager with Chrome extension auto-install | `install/apps/app-lastpass.sh` |
-| **pCloud** | Cloud storage client | `install/apps/app-pcloud.sh` |
+| **Apple Music** | Apple Music web app | `install/apps/app-applemusic.sh` |
+| **Chromium** | Chromium browser | `install/apps/app-chromium.sh` |
 | **Discord** | Enhanced Discord installation | `install/apps/app-discord.sh` |
+| **Firefox** | Firefox browser with extensions | `install/apps/app-firefox.sh` |
+| **Konversation** | IRC client | `install/apps/app-konversation.sh` |
+| **LastPass** | Password manager with Chrome extension auto-install | `install/apps/app-lastpass.sh` |
 | **Mailspring** | Modern email client | `install/apps/app-mailspring.sh` |
+| **pCloud** | Cloud storage client | `install/apps/app-pcloud.sh` |
 | **PIA VPN** | Private Internet Access VPN client | `install/apps/app-pia-vpn.sh` |
+| **Remmina** | Remote desktop client | `install/apps/app-remmina.sh` |
+| **tmux** | Terminal multiplexer | `install/apps/app-tmux.sh` |
+| **uBlock Origin Lite** | Chrome ad blocker extension | `install/apps/app-ublock.sh` |
 
 ### 🔒 Security Enhancements
 
@@ -47,12 +53,6 @@ cd post-omakub
 - **UFW Firewall**: Enabled with SSH access configured
 - Located in: `install/security/security-setup.sh`
 
-### 🎨 Chrome Theme Integration
-
-Extends Omakub's theme system to include Chrome browser theming:
-- Integrates with all existing Omakub themes
-- Automatically applies Chrome themes when switching Omakub themes
-- Custom background and color scheme support
 
 ### 🖥️ Desktop Enhancements
 
@@ -81,7 +81,7 @@ Choose exactly what you want to install through an interactive menu.
 ### Install Everything
 ```bash
 ./install.sh
-# Choose option 6 from the menu
+# Choose option 5 from the menu
 ```
 
 ### Manual Installation
@@ -90,9 +90,6 @@ Run individual components:
 ```bash
 # Security hardening only
 bash install/security/security-setup.sh
-
-# Chrome theme integration only  
-bash install/themes/setup-chrome-themes.sh
 
 # Desktop enhancements only
 bash install/desktop/setup-enhancements.sh
@@ -110,29 +107,33 @@ post-omakub/
 ├── install.sh                          # Main interactive installer
 ├── install/
 │   ├── apps/                           # Additional applications
-│   │   ├── app-lastpass.sh
-│   │   ├── app-pcloud.sh
-│   │   ├── app-discord.sh
-│   │   ├── app-mailspring.sh
-│   │   └── app-pia-vpn.sh
+│   │   ├── app-applemusic.sh           # Apple Music web app
+│   │   ├── app-chromium.sh             # Chromium browser
+│   │   ├── app-discord.sh              # Discord
+│   │   ├── app-firefox.sh              # Firefox with extensions
+│   │   ├── app-konversation.sh         # IRC client
+│   │   ├── app-lastpass.sh             # LastPass extension
+│   │   ├── app-mailspring.sh           # Email client
+│   │   ├── app-pcloud.sh               # Cloud storage
+│   │   ├── app-pia-vpn.sh              # VPN client
+│   │   ├── app-remmina.sh              # Remote desktop
+│   │   ├── app-tmux.sh                 # Terminal multiplexer
+│   │   └── app-ublock.sh               # uBlock Origin Lite
 │   ├── security/
 │   │   └── security-setup.sh           # SSH + UFW setup
-│   ├── themes/
-│   │   ├── setup-chrome-themes.sh      # Chrome theme integration
-│   │   ├── set-chrome-theme.sh         # Chrome theme setter
-│   │   └── chrome-configs/             # Per-theme Chrome configs
 │   └── desktop/
 │       ├── setup-enhancements.sh       # Desktop enhancement setup
 │       ├── set-default-terminal.sh     # Terminal configuration
-│       ├── set-gnome-extensions.sh     # Ubuntu Dock configuration
-│       └── set-gnome-terminal-profile.sh
+│       ├── set-dock.sh                 # Dock configuration
+│       ├── set-gnome-extensions.sh     # GNOME extensions
+│       └── set-gnome-terminal-profile.sh # Terminal profile
 └── uninstall/                          # Application removal scripts
     ├── app-basecamp.sh
+    ├── app-dropbox.sh
     ├── app-hey.sh
-    ├── app-typora.sh
     ├── app-spotify.sh
-    ├── app-zoom.sh
-    └── app-dropbox.sh
+    ├── app-typora.sh
+    └── app-zoom.sh
 ```
 
 ## Compatibility
@@ -152,6 +153,13 @@ This project was extracted from a customized Omakub fork. The goal is to maintai
 3. Make your changes
 4. Test thoroughly
 5. Submit a pull request
+
+## Known Issues & Todo
+
+Based on the todo list, there are a few remaining tasks:
+- Add automatic "yes to all" option for install everything mode
+- Add uBlock Origin Lite extension auto-install for Chrome with developer mode
+- Add Firefox extensions (LastPass and uBlock Origin) and disable telemetry
 
 ## Security
 
