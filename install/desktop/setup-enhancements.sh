@@ -20,6 +20,7 @@ fi
 # Setup Ubuntu Dock
 if gum confirm "Setup Ubuntu Dock?"; then
     bash "$SCRIPT_DIR/set-gnome-extensions.sh"
+    bash "$SCRIPT_DIR/set-dock.sh"
     echo "✓ Ubuntu Dock configured"
 fi
 
