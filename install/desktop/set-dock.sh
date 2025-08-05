@@ -8,10 +8,12 @@ apps=(
 	"Neovim.desktop"
 	"discord_discord.desktop"
 	"steam.desktop"
+	"applemusic.desktop"
 	"org.gimp.GIMP.desktop"
 	"org.libretro.RetroArch.desktop"
 	"md.obsidian.Obsidian.desktop"
-	#"pCloud.desktop" need to add
+	"pCloud.desktop"
+	"piavpn.desktop"
 	"mailspring_mailspring.desktop"
 	"remmina_remmina.desktop"
 	"Activity.desktop"
