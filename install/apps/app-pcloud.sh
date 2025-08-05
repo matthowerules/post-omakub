@@ -7,27 +7,27 @@ echo "Installing pCloud..."
 sudo apt install -y libfuse2t64
 
 # Stage desktop icon and create desktop shortcut
-cp pcloud-icon-96.png ~/.local/share/omakub/applications/icons/pCloud.png
+#cp pcloud-icon-96.png ~/.local/share/omakub/applications/icons/pCloud.png
 
-cat <<EOF >~/.local/share/applications/pCloud.desktop
-[Desktop Entry]
-Version=1.0
-Name=pCloud
-Comment=Secure Cloud Storage
-Exec=pcloud
-Terminal=false
-Type=Application
-Icon=/home/$USER/.local/share/omakub/applications/icons/pCloud.png
-Categories=Utility;
-StartupNotify=true
-EOF
+#cat <<EOF >~/.local/share/applications/pCloud.desktop
+#[Desktop Entry]
+#Version=1.0
+#Name=pCloud
+#Comment=Secure Cloud Storage
+#Exec=pcloud
+#Terminal=false
+#Type=Application
+#Icon=/home/$USER/.local/share/omakub/applications/icons/pCloud.png
+#Categories=Utility;
+#StartupNotify=true
+#EOF
 
 # Download and install pCloud
-cd /tmp
+cd ~/Downloads
 wget -O pcloud https://linuxstans.com/goto/pcloud-download-64bit/
 sudo chmod +x pcloud
-sudo mv pcloud /usr/bin/pcloud
-cd -
+sudo pcloud
 
 
-echo "pCloud installed successfully! Run 'pcloud' to start."
+
+echo "pCloud staged successfully!"
