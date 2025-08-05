@@ -1,4 +1,4 @@
 #!/bin/bash
 
-sudo snap install konversation #maybe fiddle with halloy again some day
-
+sudo snap install konversation
+sudo snap install halloy
