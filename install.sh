@@ -67,11 +67,10 @@ EOF
     case $choice in
         1) install_applications ;;
         2) setup_security ;;
-        3) setup_chrome_themes ;;
-        4) setup_desktop_enhancements ;;
-        5) remove_unwanted_apps ;;
-        6) install_everything ;;
-        7) exit 0 ;;
+        3) setup_desktop_enhancements ;;
+        4) remove_unwanted_apps ;;
+        5) install_everything ;;
+        6) exit 0 ;;
         *) echo "Invalid option. Please try again." && sleep 2 && show_menu ;;
     esac
 }
@@ -103,18 +102,6 @@ setup_security() {
     fi
     
     read -p "Press Enter to return to menu..."  
-    show_menu
-}
-
-setup_chrome_themes() {
-    print_header "Setting up Chrome Theme Integration"
-    
-    if gum confirm "Setup Chrome theme integration for all omakub themes?"; then
-        bash "$SCRIPT_DIR/install/themes/setup-chrome-themes.sh"
-        print_success "Chrome theme integration completed!"
-    fi
-    
-    read -p "Press Enter to return to menu..."
     show_menu
 }
 
@@ -161,10 +148,7 @@ install_everything() {
         # Setup security
         bash "$SCRIPT_DIR/install/security/security-setup.sh"
         
-        # Setup Chrome themes  
-        bash "$SCRIPT_DIR/install/themes/setup-chrome-themes.sh"
-        
-        # Setup desktop enhancements
+       # Setup desktop enhancements
         bash "$SCRIPT_DIR/install/desktop/setup-enhancements.sh"
         
         print_success "Full installation completed!"

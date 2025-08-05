@@ -3,6 +3,12 @@
 #Re-enable the dock
 gnome-extensions enable ubuntu-dock@ubuntu.com
 
+# Do not show unmounted volumes in the dock
+gsettings set org.gnome.shell.extensions.dash-to-dock show-unmounted-volumes false
+
+# Disable panel mode
+gsettings set org.gnome.shell.extensions.dash-to-dock extend-height false
+
 #Set dock icon size
 gsettings set org.gnome.shell.extensions.dash-to-dock dash-max-icon-size 32
 
