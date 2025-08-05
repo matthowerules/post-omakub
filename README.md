@@ -37,20 +37,21 @@ cd post-omakub
 | **Apple Music** | Apple Music web app | `install/apps/app-applemusic.sh` |
 | **Chromium** | Chromium browser | `install/apps/app-chromium.sh` |
 | **Discord** | Enhanced Discord installation | `install/apps/app-discord.sh` |
-| **Firefox** | Firefox browser with extensions | `install/apps/app-firefox.sh` |
+| **Firefox** | Firefox browser with telemetry disabled | `install/apps/app-firefox.sh` |
 | **Konversation** | IRC client | `install/apps/app-konversation.sh` |
-| **LastPass** | Password manager with Chrome extension auto-install | `install/apps/app-lastpass.sh` |
+| **LastPass** | Password manager with Chrome & Firefox extensions | `install/apps/app-lastpass.sh` |
 | **Mailspring** | Modern email client | `install/apps/app-mailspring.sh` |
 | **pCloud** | Cloud storage client | `install/apps/app-pcloud.sh` |
 | **PIA VPN** | Private Internet Access VPN client | `install/apps/app-pia-vpn.sh` |
 | **Remmina** | Remote desktop client | `install/apps/app-remmina.sh` |
 | **tmux** | Terminal multiplexer | `install/apps/app-tmux.sh` |
-| **uBlock Origin Lite** | Chrome ad blocker extension | `install/apps/app-ublock.sh` |
+| **uBlock Origin Lite** | Chrome & Firefox ad blocker extensions | `install/apps/app-ublock.sh` |
 
 ### 🔒 Security Enhancements
 
 - **SSH Daemon**: Automatically enabled and configured
 - **UFW Firewall**: Enabled with SSH access configured
+- **Firefox Privacy**: Telemetry and data collection disabled
 - Located in: `install/security/security-setup.sh`
 
 
@@ -159,7 +160,6 @@ This project was extracted from a customized Omakub fork. The goal is to maintai
 Based on the todo list, there are a few remaining tasks:
 - Add automatic "yes to all" option for install everything mode
 - Add uBlock Origin Lite extension auto-install for Chrome with developer mode
-- Add Firefox extensions (LastPass and uBlock Origin) and disable telemetry
 
 ## Security
 
