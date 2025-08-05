@@ -6,7 +6,6 @@ apps=(
 	"org.gnome.Terminal.desktop"
 	"code.desktop"
 	"Neovim.desktop"
-	"discord_discord.desktop"
 	"steam.desktop"
 	"applemusic.desktop"
 	"org.gimp.GIMP.desktop"
