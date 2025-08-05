@@ -7,7 +7,7 @@ echo "Installing pCloud..."
 sudo apt install -y libfuse2t64
 
 # Stage desktop icon and create desktop shortcut
-cp pcloud-icon-96.png USER/.local/share/omakub/applications/icons/pCloud.png
+cp pcloud-icon-96.png ~/.local/share/omakub/applications/icons/pCloud.png
 
 cat <<EOF >~/.local/share/applications/pCloud.desktop
 [Desktop Entry]
@@ -18,7 +18,7 @@ Exec=pcloud
 Terminal=false
 Type=Application
 Icon=/home/$USER/.local/share/omakub/applications/icons/pCloud.png
-Categories=Utilites;
+Categories=Utility;
 StartupNotify=true
 EOF
 

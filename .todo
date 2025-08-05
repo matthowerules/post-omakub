@@ -2,13 +2,14 @@ x done - 1. Add permanent alias back for ll='ls -lah'
 x done - 2. Change the terminal back to show directory
 x done - 3. Change terminal line display and character back to normal <user@hostname:folder$ from the weird empty line and circle right arrow
 x done - 4. Remove alacritty, whatsapp, and signal from dock
-5. Add yes to all options for install everything
+x skip - 5. Add yes to all options for install everything
 x done - 6. Add terminal to second spot in dock. add discord to fifth spot.
 x done - 7. Reset tactile gnome extension layout 1 to the default. set advance gap to 0.
 x done - 8. Do not include unmounted volumes in dock config. also set panel mode.
 x done - 9. Remove browser theme section
-10. Add ublock origin lite extension to Chrome. Look for way to enable developer mode in Chrome.
-11. Add firefox extensions - lastpass and ublock origins. turn off firefox telemetry. 
+x done - 10. Add ublock origin lite extension to Chrome. Look for way to enable developer mode in Chrome.
+x done - 11. Add firefox extensions - lastpass and ublock origins. turn off firefox telemetry. 
 x done - 12. Add snap install remmina
 x done - 13. Add apt install tmux
-x done - 14. Add Apple Music web app 
+x done - 14. Add Apple Music web app
+15. Get pCloud and Apple Music icons, stage in repo, copy to system, configure in .desktop file so they show up in the dock 
