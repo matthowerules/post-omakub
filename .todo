@@ -12,4 +12,5 @@ x done - 11. Add firefox extensions - lastpass and ublock origins. turn off fire
 x done - 12. Add snap install remmina
 x done - 13. Add apt install tmux
 x done - 14. Add Apple Music web app
-15. Get pCloud and Apple Music icons, stage in repo, copy to system, configure in .desktop file so they show up in the dock 
+x done - 15. Get pCloud and Apple Music icons, stage in repo, copy to system, configure in .desktop file so they show up in the dock
+x done - 16. Add snap install drawio 

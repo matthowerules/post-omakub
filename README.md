@@ -6,7 +6,7 @@ A collection of additional applications, security enhancements, and customizatio
 
 Omakub is awesome, and very opinionated... I love it and use it as a starting point, but I am also opinionated, so this is my curated set of enhancements that build on top standard Omakub, including:
 
-- **Additional Applications**: Apple Music, Chromium, Discord, Firefox, IRC clients (Konversation, Halloy), LastPass, Mailspring, pCloud, PIA VPN, Remmina, tmux, uBlock Origin Lite
+- **Additional Applications**: Apple Music, Chromium, Discord, Draw.io, Firefox, IRC clients (Konversation, Halloy), LastPass, Mailspring, pCloud, PIA VPN, Remmina, tmux, uBlock Origin Lite
 - **System Config**: SSH daemon and UFW firewall configuration  
 - **Desktop Enhancements**: Default terminal set to GNOME, re-added Dock, some  configurations and UI
 - **Cleanup Tools**: Remove some default applications (Basecamp, Hey, etc.)
@@ -36,7 +36,8 @@ cd post-omakub
 |-------------|-------------|-------------------|
 | **Apple Music** | Apple Music web app | `install/apps/app-applemusic.sh` |
 | **Chromium** | Chromium browser | `install/apps/app-chromium.sh` |
-| **Discord** | Enhanced Discord installation | `install/apps/app-discord.sh` |
+| **Discord** | Discord installation | `install/apps/app-discord.sh` |
+| **Draw.io** | Draw.io installation | `install/apps/app-drawio.sh` |
 | **Firefox** | Firefox browser with telemetry disabled | `install/apps/app-firefox.sh` |
 | **Applets** | Application launcher/utilities (htop) | `install/apps/app-applet.sh` |
 | **IRC Clients** | IRC communication clients | `install/apps/app-irc.sh` |
@@ -116,6 +117,7 @@ post-omakub/
 │   │   ├── app-applet.sh               # Application launcher/utility
 │   │   ├── app-chromium.sh             # Chromium browser
 │   │   ├── app-discord.sh              # Discord
+│   │   ├── app-drawio.sh               # Draw.io
 │   │   ├── app-firefox.sh              # Firefox with extensions
 │   │   ├── app-irc.sh                  # IRC client
 │   │   ├── app-lastpass.sh             # LastPass extension
@@ -163,5 +165,5 @@ MIT License - see LICENSE file for details.
 
 ## Acknowledgments
 
-- [Omakub](https://omakub.org) - The excellent base system this builds upon
+- [Omakub](https://omakub.org) - The excellent base system from DHH this builds upon
 - [Basecamp](https://basecamp.com) - For creating and maintaining Omakub
