@@ -6,9 +6,9 @@ A collection of additional applications, security enhancements, and customizatio
 
 Omakub is awesome, and very opinionated... I love it and use it as a starting point, but I am also opinionated, so this is my curated set of enhancements that build on top standard Omakub, including:
 
-- **Additional Applications**: Apple Music, Discord, Firefox, Chromium, Konversation IRC, LastPass, Mailspring, pCloud, PIA VPN, Remmina, tmux, uBlock Origin Lite
-- **Security Hardening**: SSH daemon and UFW firewall configuration  
-- **Desktop Enhancements**: Default terminal set to GNOME, with configurations and UI
+- **Additional Applications**: Apple Music, Chromium, Discord, Firefox, IRC clients (Konversation, Halloy), LastPass, Mailspring, pCloud, PIA VPN, Remmina, tmux, uBlock Origin Lite
+- **System Config**: SSH daemon and UFW firewall configuration  
+- **Desktop Enhancements**: Default terminal set to GNOME, re-added Dock, some  configurations and UI
 - **Cleanup Tools**: Remove some default applications (Basecamp, Hey, etc.)
 
 ## Prerequisites
@@ -21,7 +21,7 @@ Omakub is awesome, and very opinionated... I love it and use it as a starting po
 
 ```bash
 # Clone this repository
-git clone https://github.com/yourusername/post-omakub.git
+git clone https://github.com/matthowerules/post-omakub.git
 cd post-omakub
 
 # Run the interactive installer
@@ -38,7 +38,8 @@ cd post-omakub
 | **Chromium** | Chromium browser | `install/apps/app-chromium.sh` |
 | **Discord** | Enhanced Discord installation | `install/apps/app-discord.sh` |
 | **Firefox** | Firefox browser with telemetry disabled | `install/apps/app-firefox.sh` |
-| **Konversation** | IRC client | `install/apps/app-konversation.sh` |
+| **Applets** | Application launcher/utilities (htop) | `install/apps/app-applet.sh` |
+| **IRC Clients** | IRC communication clients | `install/apps/app-irc.sh` |
 | **LastPass** | Password manager with Chrome & Firefox extensions | `install/apps/app-lastpass.sh` |
 | **Mailspring** | Modern email client | `install/apps/app-mailspring.sh` |
 | **pCloud** | Cloud storage client | `install/apps/app-pcloud.sh` |
@@ -105,24 +106,33 @@ bash install/apps/app-pcloud.sh
 
 ```
 post-omakub/
+├── LICENSE                             # MIT License
+├── README.md                           # This documentation
+├── echo                                # Echo utility (appears to be a binary)
 ├── install.sh                          # Main interactive installer
 ├── install/
 │   ├── apps/                           # Additional applications
 │   │   ├── app-applemusic.sh           # Apple Music web app
+│   │   ├── app-applet.sh               # Application launcher/utility
 │   │   ├── app-chromium.sh             # Chromium browser
 │   │   ├── app-discord.sh              # Discord
 │   │   ├── app-firefox.sh              # Firefox with extensions
-│   │   ├── app-konversation.sh         # IRC client
+│   │   ├── app-irc.sh                  # IRC client
 │   │   ├── app-lastpass.sh             # LastPass extension
 │   │   ├── app-mailspring.sh           # Email client
 │   │   ├── app-pcloud.sh               # Cloud storage
 │   │   ├── app-pia-vpn.sh              # VPN client
 │   │   ├── app-remmina.sh              # Remote desktop
 │   │   ├── app-tmux.sh                 # Terminal multiplexer
-│   │   └── app-ublock.sh               # uBlock Origin Lite
+│   │   ├── app-ublock.sh               # uBlock Origin Lite
+│   │   ├── music-icon-96.png           # Apple Music icon
+│   │   └── pcloud-icon-96.png          # pCloud icon
 │   ├── security/
 │   │   └── security-setup.sh           # SSH + UFW setup
 │   └── desktop/
+│       ├── aliases                     # Shell aliases configuration
+│       ├── gnome-terminal-settings.txt # Terminal settings export
+│       ├── prompt                      # Custom shell prompt
 │       ├── setup-enhancements.sh       # Desktop enhancement setup
 │       ├── set-default-terminal.sh     # Terminal configuration
 │       ├── set-dock.sh                 # Dock configuration
@@ -146,28 +156,6 @@ post-omakub/
 ## Development
 
 This project was extracted from a customized Omakub fork. The goal is to maintain these enhancements as a separate overlay that can be applied after the standard Omakub installation.
-
-### Contributing
-
-1. Fork this repository
-2. Create a feature branch
-3. Make your changes
-4. Test thoroughly
-5. Submit a pull request
-
-## Known Issues & Todo
-
-Based on the todo list, there are a few remaining tasks:
-- Add automatic "yes to all" option for install everything mode
-- Add uBlock Origin Lite extension auto-install for Chrome with developer mode
-
-## Security
-
-All scripts in this project follow security best practices:
-- No hardcoded credentials
-- Proper file permissions
-- Safe download methods
-- User confirmation for destructive actions
 
 ## License
 
