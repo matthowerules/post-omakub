@@ -61,7 +61,7 @@ cd post-omakub
 
 - **Default Terminal Configuration**: I am not a Alacritty or Zellij guy and enjoy GNOME terminal. Don't hate.
 - **GNOME Terminal Profiles**: Improved terminal colors (with default)
-- **Ubuntu Dock**: I like the dock so it's back (with smaller icons)
+- **Ubuntu Dock**: I like the dock so it's back (with smaller icons). Also the tray is re-enabled.
 
 ### 🗑️ Application Cleanup
 
