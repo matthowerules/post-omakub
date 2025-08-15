@@ -24,5 +24,11 @@ if gum confirm "Setup Ubuntu Dock?"; then
     echo "✓ Ubuntu Dock configured"
 fi
 
+# Setup Vim Config
+cat << EOF > ~./vimrc
+set tabstop=2
+set shiftwidth=2
+set expandtab
+EOF
 
 echo "Desktop enhancements setup completed!"
