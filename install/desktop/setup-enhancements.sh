@@ -31,4 +31,16 @@ set shiftwidth=2
 set expandtab
 EOF
 
+# Setup Zellij cfg
+cp zellij.cfg.kdl ~/.config/zellij/config.kdl
+
+cat << EOF >> ~/.bachrc
+
+if ! pgrep -f "zellij" >/dev/null; then
+  zellij
+fi
+
+fastfetch
+EOF
+
 echo "Desktop enhancements setup completed!"

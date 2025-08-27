@@ -21,6 +21,8 @@ alias bat='batcat'
 alias lzg='lazygit'
 alias lzd='lazydocker'
 alias sloc='find . -type f -exec wc -l {} +'
+alias nv='nvim'
+alias zj='zellij'
 
 # Git
 alias gcm='git commit -m'
